@@ -1,4 +1,5 @@
-require "tax_code/version"
+require_relative "tax_code/version"
+require 'date'
 
 class TaxCode
   class << self
@@ -6,7 +7,7 @@ class TaxCode
       TaxCode.new(path).taxes    
     end
 
-    def worst(path = '.', num = 10)
+    def worst(path = '.', num = 25)
       TaxCode.new(path).worst(num)
     end
   
@@ -44,8 +45,8 @@ class TaxCode
     taxes.select{ |_, t| t > 0 }
   end
 
-  def worst(num = 10)
-    taxed_only..sort_by(&:last).last(num).reverse 
+  def worst(num = 25)
+    taxed_only.sort_by(&:last).last(num).reverse 
   end
   
 private

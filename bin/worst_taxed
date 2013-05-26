@@ -1,0 +1,8 @@
+#! /usr/bin/env ruby
+require_relative '../lib/tax_code'
+
+worst = TaxCode.worst(ARGV[0] || '.')
+
+puts 'No taxed files found' and exit if worst.empty?
+
+puts worst.map{ |f, t| "#{t}\t#{f}" } 
