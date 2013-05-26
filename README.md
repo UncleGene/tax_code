@@ -9,7 +9,8 @@ are too complex - they should be considered for refactoring.
 
 You can see the tax value for particular file as a 'perceptual size increase' - e.g. if the file
 size is 500 lines and its tax is 400, this file maintenance costs the same as for untouched 
-900 lines long one (please note that there is no science behind tax calculation, this is author's opinionated taks on the problem)
+900 lines long one (please note that there is no science behind tax calculation, this is author's 
+opinionated take on the problem)
 
 TaxCode differences from other similar scripts and gems:
 - TaxCode takes into account that maintenance cost decreases over time - if you do not
@@ -35,7 +36,7 @@ Or install it yourself as:
 
 Main intent of this gem is to be used from command line. The number of options and commands will be increased in future releases
 
-To get repository or directory aggregated tax or a file tax:
+To get repository or directory aggregated tax:
 
     $ cd test/repo
     $ taxes
@@ -44,6 +45,8 @@ To get repository or directory aggregated tax or a file tax:
     $ cd ../..
     $ taxes test/repo
     19
+
+Individual file tax (after last rename/move):
 
     $ taxes test/repo/multiple_commits
     14
