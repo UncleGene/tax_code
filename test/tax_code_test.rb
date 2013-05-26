@@ -10,4 +10,8 @@ class TaxCodeTest < MiniTest::Unit::TestCase
     assert res['test/repo/committed_once'] == 0
     assert res['test/repo/commited_once'] == nil # File removed from repo
   end
+
+  def test_taxed_only
+    assert TaxCode.taxed_only('test/repo').size == 2
+  end
 end
