@@ -1,5 +1,5 @@
 #! /usr/bin/env ruby
-require_relative '../lib/tax_code'
+require 'tax_code'
 
 worst = TaxCode.worst(ARGV[0] || '.')
 

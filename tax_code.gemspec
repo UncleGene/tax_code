@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ['rubify@softover.com']
   gem.description   = 'TaxCode scans git commit history and calculates maintenance tax for each file'
   gem.summary       = 'Calculates maintenance taxes for your git repo'
-  gem.homepage      = 'https://github.com/kalenkov/tax_code'
+  gem.homepage      = 'https://github.com/UncleGene/tax_code'
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }

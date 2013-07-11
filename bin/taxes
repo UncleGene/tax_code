@@ -1,5 +1,5 @@
 #! /usr/bin/env ruby
-require_relative '../lib/tax_code'
+relative 'tax_code'
 
 target = ARGV[0] || '.'
 
