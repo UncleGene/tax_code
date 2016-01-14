@@ -16,7 +16,7 @@ TaxCode differences from other similar scripts and gems:
 - TaxCode takes into account that maintenance cost decreases over time - if you do not
 touch some files for a long time, they may be stable enogh and not have as high cost as recently modified ones. 
 - It gives you a 'tax credit' for changes that reduce the size of your files
-- It tracks files that are renamed and/or moed around
+- It tracks files that are renamed and/or moved around
 
 ## Installation
 
