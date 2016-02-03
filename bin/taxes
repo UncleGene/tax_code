@@ -1,5 +1,5 @@
 #! /usr/bin/env ruby
-relative 'tax_code'
+require 'tax_code'
 
 target = ARGV[0] || '.'
 
